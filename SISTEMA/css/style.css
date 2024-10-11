@@ -1,0 +1,126 @@
+/*css/style.css = desenvolvido para estilizar a página 'index.php'*/
+
+body {  /*Estilização de todo o corpo da página*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #29ad86;
+    line-height: 1.6;
+}
+.cad-container {  /*Estilização do container de Cadastro*/
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+}
+.tab-container {  /*Estilização do container de Tabela*/
+    max-width: 90%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+}
+h1, h2 {  /*Estilização dos títulos hierarquizados*/
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.form-cadastro, .form-pesquisa {  /*Estilização de ambos os formulários*/
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+label {  /*Estilização dos itens dentro do Formulário de Cadastro*/
+    font-weight: bolder;
+    color: #000000;
+}
+input[type="text"], input[type="number"], input[type="email"] {  /*Estilização dos tipos de texto de cada item do Formulário de Cadastro*/
+    padding: 10px;
+    border: 2px solid #29ad86;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border 0.3s ease;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {  /*Estilização dos tipos de texto, no Formulário de Cadastro, quando recebem foco do usuário*/
+    border-color: #29ad86;
+    outline: none;
+}
+button {  /*Estilização dos butões*/
+    padding: 12px 20px;
+    background-color: #29ad86;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {  /*Estilização dos butões quando o cursor passa por cima*/
+    background-color :#86e4c8;
+    transform: translateY(-2px);
+}
+.form-pesquisa input {  /*Estilização dos itens do Formulário de Pesquisa*/
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    border: 2px solid ;
+}
+.form-pesquisa button {  /*Estilização dos butões do Formulário de Pesquisa*/
+    margin-top: 10px;
+}
+.table-alunos {  /*Estilização da Tabela de Alunos*/
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.table-alunos th {  /*Estilização dos nomes das colunas da Tabela de Alunos*/
+    padding: 12px 15px;
+    text-align: left;
+    border-color: #29ad86;
+    border-bottom: 1px solid ;
+}
+.table-alunos td {  /*Estilização dos itens das variáveis de cada coluna na Tabela de Alunos*/
+    background-color:#fff;
+    color: #29ad86;
+    padding: 12px 15px;
+    text-align: left;
+    border-color: #29ad86;
+    border-bottom: 1px solid; 
+}
+.table-alunos th {  /*Estilização dos nomes das colunas da Tabela de Alunos*/
+    background-color: #29ad86;
+    color: #fff;
+}
+.table-alunos tbody tr:nth-child(odd) {  /*Estilização da parte em PHP (apenas itens das variáveis em ímpar) que aparecerá na Tabela de Alunos*/
+    background-color: #f8f9fa;
+}
+.table-alunos tbody tr:hover {  /*Estilização da parte em PHP (itens das variáveis) que aparecerá na Tabela de Alunos quando o cursor passa por cima*/
+    background-color: #f1faee;
+}
+.table-alunos a {  /*Estilização dos itens linkados da Tabela de Alunos*/
+    color: #f19ca3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.table-alunos a:hover {  /*Estilização do itens linkados da Tabela de Alunos quando o cursor passa por cima*/
+    color: #d90429;
+}
+@media (max-width: 768px) {  /*Estilização da responsividade do código (tamanho da tela)*/
+    .container {
+        padding: 20px;
+    }
+    .form-cadastro, .form-pesquisa {
+        gap: 10px;
+    }
+    .table-alunos th, .table-alunos td {
+        padding: 10px;
+    }
+}
